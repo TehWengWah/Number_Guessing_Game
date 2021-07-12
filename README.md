@@ -376,6 +376,75 @@ endmodule
 
 ### 5.3 Waveform
 ![image](https://user-images.githubusercontent.com/48057545/125210297-80b01e00-e2d1-11eb-9b73-434ff6c5b460.png)
+```
+                   0DIP=xxxxxxxxxx, rst=x, enter=x, genrand=x, done=x, outrange=x,  GT=x, LT=x, EQ=x, out=  x, datain=  x, LL=  x, HL=  x, ps=xx, ns=xx, cv=xxx
+                  50DIP=xxxxxxxxxx, rst=1, enter=x, genrand=x, done=0, outrange=0,  GT=0, LT=0, EQ=0, out=  0, datain=  0, LL=  1, HL= 99, ps=00, ns=01, cv=110
+                 100DIP=xxxxxxxxxx, rst=0, enter=x, genrand=x, done=0, outrange=1,  GT=0, LT=0, EQ=0, out=  0, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                 150DIP=xxxxxxxxxx, rst=0, enter=x, genrand=1, done=0, outrange=1,  GT=0, LT=0, EQ=0, out=  1, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                 155DIP=xxxxxxxxxx, rst=0, enter=x, genrand=1, done=0, outrange=1,  GT=0, LT=0, EQ=0, out=  3, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                 165DIP=xxxxxxxxxx, rst=0, enter=x, genrand=1, done=0, outrange=1,  GT=0, LT=0, EQ=0, out=  7, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                 175DIP=xxxxxxxxxx, rst=0, enter=x, genrand=1, done=0, outrange=1,  GT=0, LT=0, EQ=0, out= 15, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                 185DIP=xxxxxxxxxx, rst=0, enter=x, genrand=1, done=0, outrange=1,  GT=0, LT=0, EQ=0, out= 30, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                 195DIP=xxxxxxxxxx, rst=0, enter=x, genrand=1, done=0, outrange=1,  GT=0, LT=0, EQ=0, out= 61, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                 200DIP=xxxxxxxxxx, rst=0, enter=x, genrand=0, done=0, outrange=1,  GT=0, LT=0, EQ=0, out= 61, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                 250DIP=0000000000, rst=0, enter=x, genrand=0, done=0, outrange=1,  GT=0, LT=0, EQ=0, out= 61, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                 300DIP=0000100000, rst=0, enter=x, genrand=0, done=0, outrange=1,  GT=0, LT=0, EQ=0, out= 61, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                 350DIP=0000000000, rst=0, enter=x, genrand=0, done=0, outrange=1,  GT=0, LT=0, EQ=0, out= 61, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                 400DIP=0000000001, rst=0, enter=x, genrand=0, done=0, outrange=1,  GT=0, LT=0, EQ=0, out= 61, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                 450DIP=0000000000, rst=0, enter=x, genrand=0, done=0, outrange=1,  GT=0, LT=0, EQ=0, out= 61, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                 500DIP=0000000000, rst=0, enter=1, genrand=0, done=0, outrange=0,  GT=0, LT=1, EQ=0, out= 61, datain= 50, LL= 50, HL= 99, ps=01, ns=01, cv=111
+                 550DIP=0000000000, rst=0, enter=0, genrand=0, done=0, outrange=0,  GT=0, LT=1, EQ=0, out= 61, datain= 50, LL= 50, HL= 99, ps=01, ns=01, cv=111
+                 600DIP=0100000000, rst=0, enter=0, genrand=0, done=0, outrange=0,  GT=0, LT=1, EQ=0, out= 61, datain= 50, LL= 50, HL= 99, ps=01, ns=01, cv=111
+                 650DIP=0000000000, rst=0, enter=0, genrand=0, done=0, outrange=0,  GT=0, LT=1, EQ=0, out= 61, datain= 50, LL= 50, HL= 99, ps=01, ns=01, cv=111
+                 700DIP=0000000001, rst=0, enter=0, genrand=0, done=0, outrange=0,  GT=0, LT=1, EQ=0, out= 61, datain= 50, LL= 50, HL= 99, ps=01, ns=01, cv=111
+                 750DIP=0000000000, rst=0, enter=0, genrand=0, done=0, outrange=0,  GT=0, LT=1, EQ=0, out= 61, datain= 50, LL= 50, HL= 99, ps=01, ns=01, cv=111
+                 800DIP=0000000000, rst=0, enter=1, genrand=0, done=0, outrange=1,  GT=0, LT=1, EQ=0, out= 61, datain= 20, LL= 50, HL= 99, ps=01, ns=01, cv=000
+                 850DIP=0000000000, rst=0, enter=0, genrand=0, done=0, outrange=1,  GT=0, LT=1, EQ=0, out= 61, datain= 20, LL= 50, HL= 99, ps=01, ns=01, cv=000
+                 900DIP=0000001000, rst=0, enter=0, genrand=0, done=0, outrange=1,  GT=0, LT=1, EQ=0, out= 61, datain= 20, LL= 50, HL= 99, ps=01, ns=01, cv=000
+                 950DIP=0000000000, rst=0, enter=0, genrand=0, done=0, outrange=1,  GT=0, LT=1, EQ=0, out= 61, datain= 20, LL= 50, HL= 99, ps=01, ns=01, cv=000
+                1000DIP=0000000001, rst=0, enter=0, genrand=0, done=0, outrange=1,  GT=0, LT=1, EQ=0, out= 61, datain= 20, LL= 50, HL= 99, ps=01, ns=01, cv=000
+                1050DIP=0000000000, rst=0, enter=0, genrand=0, done=0, outrange=1,  GT=0, LT=1, EQ=0, out= 61, datain= 20, LL= 50, HL= 99, ps=01, ns=01, cv=000
+                1100DIP=0000000000, rst=0, enter=1, genrand=0, done=0, outrange=0,  GT=1, LT=0, EQ=0, out= 61, datain= 70, LL= 50, HL= 70, ps=01, ns=01, cv=111
+                1150DIP=0000000000, rst=0, enter=0, genrand=0, done=0, outrange=0,  GT=1, LT=0, EQ=0, out= 61, datain= 70, LL= 50, HL= 70, ps=01, ns=01, cv=111
+                1200DIP=0000010000, rst=0, enter=0, genrand=0, done=0, outrange=0,  GT=1, LT=0, EQ=0, out= 61, datain= 70, LL= 50, HL= 70, ps=01, ns=01, cv=111
+                1250DIP=0000000000, rst=0, enter=0, genrand=0, done=0, outrange=0,  GT=1, LT=0, EQ=0, out= 61, datain= 70, LL= 50, HL= 70, ps=01, ns=01, cv=111
+                1300DIP=1000000000, rst=0, enter=0, genrand=0, done=0, outrange=0,  GT=1, LT=0, EQ=0, out= 61, datain= 70, LL= 50, HL= 70, ps=01, ns=01, cv=111
+                1350DIP=0000000000, rst=0, enter=0, genrand=0, done=0, outrange=0,  GT=1, LT=0, EQ=0, out= 61, datain= 70, LL= 50, HL= 70, ps=01, ns=01, cv=111
+                1400DIP=0000000000, rst=0, enter=1, genrand=0, done=0, outrange=0,  GT=0, LT=0, EQ=1, out= 61, datain= 61, LL= 61, HL= 61, ps=01, ns=10, cv=111
+                1410DIP=0000000000, rst=0, enter=1, genrand=0, done=1, outrange=0,  GT=0, LT=0, EQ=1, out= 61, datain= 61, LL= 61, HL= 61, ps=10, ns=10, cv=000
+                1450DIP=0000000000, rst=0, enter=0, genrand=0, done=1, outrange=0,  GT=0, LT=0, EQ=1, out= 61, datain= 61, LL= 61, HL= 61, ps=10, ns=10, cv=000
+                1500DIP=0000000000, rst=1, enter=0, genrand=0, done=0, outrange=0,  GT=0, LT=0, EQ=0, out=  0, datain=  0, LL=  1, HL= 99, ps=00, ns=01, cv=110
+                1550DIP=0000000000, rst=0, enter=0, genrand=0, done=0, outrange=1,  GT=0, LT=0, EQ=0, out=  0, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                1600DIP=0000000000, rst=0, enter=0, genrand=1, done=0, outrange=1,  GT=0, LT=0, EQ=0, out=  1, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                1605DIP=0000000000, rst=0, enter=0, genrand=1, done=0, outrange=1,  GT=0, LT=0, EQ=0, out=  3, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                1615DIP=0000000000, rst=0, enter=0, genrand=1, done=0, outrange=1,  GT=0, LT=0, EQ=0, out=  7, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                1625DIP=0000000000, rst=0, enter=0, genrand=1, done=0, outrange=1,  GT=0, LT=0, EQ=0, out= 15, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                1635DIP=0000000000, rst=0, enter=0, genrand=1, done=0, outrange=1,  GT=0, LT=0, EQ=0, out= 30, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                1645DIP=0000000000, rst=0, enter=0, genrand=1, done=0, outrange=1,  GT=0, LT=0, EQ=0, out= 61, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                1650DIP=0000000000, rst=0, enter=0, genrand=0, done=0, outrange=1,  GT=0, LT=0, EQ=0, out= 61, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                1700DIP=0000000000, rst=0, enter=0, genrand=1, done=0, outrange=1,  GT=0, LT=0, EQ=0, out=  5, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                1705DIP=0000000000, rst=0, enter=0, genrand=1, done=0, outrange=1,  GT=0, LT=0, EQ=0, out= 10, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                1715DIP=0000000000, rst=0, enter=0, genrand=1, done=0, outrange=1,  GT=0, LT=0, EQ=0, out= 21, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                1725DIP=0000000000, rst=0, enter=0, genrand=1, done=0, outrange=1,  GT=0, LT=0, EQ=0, out= 84, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                1735DIP=0000000000, rst=0, enter=0, genrand=1, done=0, outrange=1,  GT=0, LT=0, EQ=0, out= 41, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                1745DIP=0000000000, rst=0, enter=0, genrand=1, done=0, outrange=1,  GT=0, LT=0, EQ=0, out= 83, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                1750DIP=0000000000, rst=0, enter=0, genrand=0, done=0, outrange=1,  GT=0, LT=0, EQ=0, out= 83, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                1850DIP=0000000100, rst=0, enter=0, genrand=0, done=0, outrange=1,  GT=0, LT=0, EQ=0, out= 83, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                1900DIP=0000000000, rst=0, enter=0, genrand=0, done=0, outrange=1,  GT=0, LT=0, EQ=0, out= 83, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                1950DIP=0000000001, rst=0, enter=0, genrand=0, done=0, outrange=1,  GT=0, LT=0, EQ=0, out= 83, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                2000DIP=0000000000, rst=0, enter=0, genrand=0, done=0, outrange=1,  GT=0, LT=0, EQ=0, out= 83, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+                2050DIP=0000000000, rst=0, enter=1, genrand=0, done=0, outrange=0,  GT=0, LT=1, EQ=0, out= 83, datain= 80, LL= 80, HL= 99, ps=01, ns=01, cv=111
+                2100DIP=0000000000, rst=0, enter=0, genrand=0, done=0, outrange=0,  GT=0, LT=1, EQ=0, out= 83, datain= 80, LL= 80, HL= 99, ps=01, ns=01, cv=111
+                2150DIP=0000000100, rst=0, enter=0, genrand=0, done=0, outrange=0,  GT=0, LT=1, EQ=0, out= 83, datain= 80, LL= 80, HL= 99, ps=01, ns=01, cv=111
+                2200DIP=0000000000, rst=0, enter=0, genrand=0, done=0, outrange=0,  GT=0, LT=1, EQ=0, out= 83, datain= 80, LL= 80, HL= 99, ps=01, ns=01, cv=111
+                2250DIP=0010000000, rst=0, enter=0, genrand=0, done=0, outrange=0,  GT=0, LT=1, EQ=0, out= 83, datain= 80, LL= 80, HL= 99, ps=01, ns=01, cv=111
+                2300DIP=0000000000, rst=0, enter=0, genrand=0, done=0, outrange=0,  GT=0, LT=1, EQ=0, out= 83, datain= 80, LL= 80, HL= 99, ps=01, ns=01, cv=111
+                2350DIP=0000000000, rst=0, enter=1, genrand=0, done=0, outrange=0,  GT=0, LT=0, EQ=1, out= 83, datain= 83, LL= 83, HL= 83, ps=01, ns=10, cv=111
+                2360DIP=0000000000, rst=0, enter=1, genrand=0, done=1, outrange=0,  GT=0, LT=0, EQ=1, out= 83, datain= 83, LL= 83, HL= 83, ps=10, ns=10, cv=000
+                2400DIP=0000000000, rst=0, enter=0, genrand=0, done=1, outrange=0,  GT=0, LT=0, EQ=1, out= 83, datain= 83, LL= 83, HL= 83, ps=10, ns=10, cv=000
+                2450DIP=0000000000, rst=1, enter=0, genrand=0, done=0, outrange=0,  GT=0, LT=0, EQ=0, out=  0, datain=  0, LL=  1, HL= 99, ps=00, ns=01, cv=110
+                2500DIP=0000000000, rst=0, enter=0, genrand=0, done=0, outrange=1,  GT=0, LT=0, EQ=0, out=  0, datain=  0, LL=  1, HL= 99, ps=01, ns=01, cv=000
+```
 Round 1<br>
 Random number = 61<br>
 rst = 1, genrand = 1,<br>
@@ -420,3 +489,10 @@ Pin Planner
 ### 6.3 Hardware Setup 
 ![image](https://user-images.githubusercontent.com/48057545/125210415-45fab580-e2d2-11eb-8ac7-20aa41f64d42.png)
 
+## 7.0 Appendix
+### Youtube link
+Hardware CPLD Demonstration<br>
+https://www.youtube.com/watch?v=7cNo8J7qOCw
+
+### EDA Playground link
+https://edaplayground.com/x/XLpV
