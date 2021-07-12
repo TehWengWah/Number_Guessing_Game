@@ -65,7 +65,7 @@ Complete numberguess top-level module with 10-pin DIP switch to load datain and 
 
 ## 4.0 Verilog Coding
 ### 4.1 `numberguess` module
-```
+```verilog
 module numberguess(
   input clk, rst, enter, genrand,
   input [9:0] DIP,
@@ -92,7 +92,7 @@ endmodule
 
 ### 4.2 `keyin` module
 For example, to key-in the value of “40”. First, switch on the pin 4, then switch off. Next, switch on the pin 10, then switch off again. Once the enter push-up button is pressed, the value of “40” in decimal is loaded to datain.
-```
+```verilog
 module keyin(
   input enter, rst,
   input [9:0] DIP,
@@ -121,7 +121,7 @@ module keyin(
   always@(rst, enter, datapressed) begin
     if (rst) datain=0;
     else if (enter) begin datain = dataA; dataA = 0; end
-    else if (datapressed= = 4'b1111) dataA = dataA;    	 
+    else if (datapressed == 4'b1111) dataA = dataA;    	 
     else if ((dataA != 0)) dataA = (dataA*10) + datapressed;
     else dataA = datapressed; end
 
@@ -129,7 +129,7 @@ endmodule
 ```
 
 ### 4.3 `CU` module
-```
+```verilog
 module CU (
   input clk, rst, EQ,
   input [7:0] LL, HL, datain,
@@ -142,7 +142,7 @@ module CU (
   
   always @ (negedge clk, posedge rst)
     if (rst) ps = S0;
-  else ps=ns;
+  else ps = ns;
     
   always @ (*) begin
     CV = 0;
@@ -168,7 +168,7 @@ endmodule
 ```
 
 ### 4.4 `DU` module
-```
+```verilog
 //DU
 module DU(
   input [7:0] datain,
@@ -191,7 +191,7 @@ module DU(
   //randomnumbergenerator
   always@(posedge clk, posedge rst, posedge genrand) begin
     if (rst)  begin
-      long=7'b0; out=8'b0; end 
+      long = 7'b0; out = 8'b0; end 
     else if (genrand) begin
       long = {long[7:0],feedback};
       ranno = {long[6:0]};
@@ -235,7 +235,7 @@ endmodule
 ```
 
 ### 4.5 `bin2bcd` module
-```
+```verilog
 module bin2bcd (
 	input[7:0] bin,
 	output reg [3:0] bcdones, bcdtens
@@ -245,19 +245,19 @@ integer k;
   // convert binary data into BCD
   always@(bin)
   begin
-    bcdtens=4'b0;
-    bcdones=4'b0;
-    for (k=7;k>=0;k=k-1)
+    bcdtens = 4'b0;
+    bcdones = 4'b0;
+    for (k = 7;k >= 0;k = k-1)
       begin
-        if (bcdtens>=5)
-          bcdtens=bcdtens+3;
-        if (bcdones>=5)
-          bcdones=bcdones+3;
+        if (bcdtens >= 5)
+          bcdtens = bcdtens+3;
+        if (bcdones >= 5)
+          bcdones = bcdones+3;
         
-        bcdtens=bcdtens<<1;
-        bcdtens[0]=bcdones[3];
-        bcdones=bcdones<<1;
-        bcdones[0]=bin[k];
+        bcdtens = bcdtens<<1;
+        bcdtens[0] = bcdones[3];
+        bcdones = bcdones<<1;
+        bcdones[0] = bin[k];
       end
   end
   
@@ -265,7 +265,7 @@ endmodule
 ```
 
 ### 4.6 `bcd7seg` module
-```
+```verilog
 module bcd7seg(
 	input [3:0] bcd,
    output reg [6:0] sevenseg
@@ -296,7 +296,7 @@ endmodule
 
 ## 5.0 Simulation
 ### 5.1 Testbench
-```
+```verilog
 `timescale 10ns/1ns
 module tb();
   reg clk, rst, enter, genrand;
