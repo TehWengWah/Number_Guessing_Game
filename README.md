@@ -375,7 +375,8 @@ endmodule
 ```
 
 ### 5.3 Waveform
-![image](https://user-images.githubusercontent.com/48057545/125210297-80b01e00-e2d1-11eb-9b73-434ff6c5b460.png)
+![waveform2](https://user-images.githubusercontent.com/48057545/125264018-12ea0d80-e336-11eb-81f8-c6f9f2d7d309.jpg)
+
 ```
                    0DIP=xxxxxxxxxx, rst=x, enter=x, genrand=x, done=x, outrange=x,  GT=x, LT=x, EQ=x, out=  x, datain=  x, LL=  x, HL=  x, ps=xx, ns=xx, cv=xxx
                   50DIP=xxxxxxxxxx, rst=1, enter=x, genrand=x, done=0, outrange=0,  GT=0, LT=0, EQ=0, out=  0, datain=  z, LL=  1, HL= 99, ps=00, ns=01, cv=110
