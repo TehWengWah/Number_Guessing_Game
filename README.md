@@ -495,4 +495,8 @@ Hardware CPLD Demonstration<br>
 https://www.youtube.com/watch?v=7cNo8J7qOCw
 
 ### EDA Playground link
+CU-DU testbench simulation<br>
+https://edaplayground.com/x/Rm9U
+
+Top-level module testbench simulation<br>
 https://edaplayground.com/x/XLpV
