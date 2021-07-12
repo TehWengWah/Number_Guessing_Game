@@ -24,7 +24,7 @@ module keyin(
 
   // data arrangement before press "enter"
   always@(rst, enter, datapressed) begin
-    if (rst) datain = 0;
+    if (rst) datain = 8'bz;
     else if (enter) begin datain = dataA; dataA = 0; end
     else if (datapressed == 4'b1111) dataA = dataA;    	 
     else if ((dataA != 0)) dataA = (dataA*10) + datapressed;
