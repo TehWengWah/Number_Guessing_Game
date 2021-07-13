@@ -60,8 +60,8 @@ However, due to insufficient logic elements available in the EPM240 CPLD board, 
 ![image](https://user-images.githubusercontent.com/48057545/125210245-139c8880-e2d1-11eb-8f3f-e8e39e3b8ba4.png)
 
 ### 3.5 Top level block diagram
-Complete numberguess top-level module with 10-pin DIP switch to load datain and 7-segment display LEDs to show LL and HL
-![image](https://user-images.githubusercontent.com/48057545/125239164-d78e1580-e31a-11eb-8842-fd9d547d170f.png)
+This is the complete numberguess top-level module, with 10-pin DIP switch to load datain and 7-segment display LEDs to show LL and HL.
+![completetoplevel](https://user-images.githubusercontent.com/48057545/125395634-0620f480-e3de-11eb-9a9f-1740674de62f.jpg)
 
 ## 4.0 Verilog Coding
 ### 4.1 `numberguess` module
