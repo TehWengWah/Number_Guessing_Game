@@ -7,7 +7,7 @@ module tb();
   wire [1:0] ns, ps;
   wire [2:0] cv;
   
-  numberguess dut(.DIP(DIP), .clk(clk), .rst(rst), .enter(enter), .genrand(genrand), .done(done), .outrange(outrange), .eq(eq), .lt(lt), .gt(gt), .LL(LL), .HL(HL), .out(out), .datain(datain), .ns(ns), .ps(ps), .cv(cv));
+  testnumberguess dut(.DIP(DIP), .clk(clk), .rst(rst), .enter(enter), .genrand(genrand), .done(done), .outrange(outrange), .eq(eq), .lt(lt), .gt(gt), .LL(LL), .HL(HL), .out(out), .datain(datain), .ns(ns), .ps(ps), .cv(cv));
   
   initial begin
     $monitor($time, "DIP=%b, rst=%b, enter=%b, genrand=%b, done=%b, outrange=%b,  GT=%b, LT=%b, EQ=%b, out=%d, datain=%d, LL=%d, HL=%d, ps=%b, ns=%b, cv=%b", DIP, rst, enter, genrand, done, outrange, gt, lt, eq, out, datain, LL, HL, ps, ns, cv);
